@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "arsh";
+    src: url('../wbf/arsh.ttf') format('truetype');
+    }
+@font-face {
+    font-family: "Alkalami";
+    src: url('../wbf/Alkalami/Alkalami-Regular.ttf') format('truetype');
+    }
+@font-face {
+    font-family: 'El Messiri', sans-serif;
+    src: url('../wbf/El_Messiri/ElMessiri-VariableFont_wght.ttf') format('truetype');
+    }
+@font-face {
+    font-family: 'Marhey';
+    src: url('../wbf/Marhey/Marhey-VariableFont_wght.ttf') format('truetype');
+    }
+@font-face {
+    font-family: 'Noto';
+    src: url('../wbf/Noto_Nastaliq_Urdu/NotoNastaliqUrdu-VariableFont_wght.ttf') format('truetype');
+    }
+@font-face {
+    font-family: 'Rakkas';
+    src: url('../wbf/Rakkas/Rakkas-Regular.ttf') format('truetype');
+    }
+@font-face {
+    font-family: 'Vibes';
+    src: url('../wbf/Vibes/Vibes-Regular.ttf') format('truetype');
+    }
+
+    /* font-family: 'Alkalami', serif;
+    font-family: 'El Messiri', sans-serif;
+    font-family: 'Marhey', cursive;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-family: 'Rakkas', cursive;
+    font-family: 'Vibes', cursive; */
