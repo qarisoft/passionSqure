@@ -13,7 +13,7 @@ $( document ).ready(function() {
         },
     });
     
-    $('body').scrollbar();
+    // $('body').scrollbar();
 
 
 
