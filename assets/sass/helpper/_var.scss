@@ -1,5 +1,19 @@
 
 :root{
     --btn-p:#541bb3d1;
+    --primaryClr:#0b5ed7;
     
   }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=El+Messiri:wght@400;500;600;700&family=Marhey:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Rakkas&family=Vibes&display=swap');
+
+$primaryClr:#0b5ed7;
+// $primaryClr:white;
+$grad1:linear-gradient(270deg,#c5cae9 0%,$primaryClr 100%);
+
+
+
+.fw-500{
+  font-weight: 500 !important;
+}

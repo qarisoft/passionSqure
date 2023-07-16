@@ -1,55 +1,35 @@
+
+
 @use 'helpper/_var';
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=El+Messiri:wght@400;500;600;700&family=Marhey:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Rakkas&family=Vibes&display=swap');
+
+@use 'intro';
 @font-face {
   font-family: 'astra';
   src: url(../wbf/astra.woff)  format("woff");
-
+  
 }
 
-$primaryClr:#0b5ed7;
-// $primaryClr:white;
-$grad1:linear-gradient(270deg,#c5cae9 0%,$primaryClr 100%);
+
 body{
   direction: rtl;
   font-family: 'Tajawal',sans-serif;
+  // font-family: 'Almarai', sans-serif;
   // font-family: 'astra';
 }
 
-// background-color: #0000006b;
-// style="    background-color: #00000038;#00000000"
 nav{
-  background-image: linear-gradient(90deg,#00000000 15%,#00000026 30%,#00000000 80%);
+  background-image: linear-gradient(90deg,#00000000 15%,#00000026 30%,#00000012 80%);
 }
 .navbar-nav .nav-item{
   margin:0px 3rem ;
-}
-/* start intro  */
-.intro{
-  padding-top: 3rem!important;
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  left: 0;
-  // .mask{
-    
-  // }
-  height: 100vh;
-  // background-image: url("../img/fogy.jpg");
-  background-color: #4527a0;
-  // background-image: linear-gradient(270deg,#9575cd 0%,#4527a0 100%);
-  background-image: linear-gradient(270deg,#c5cae9 0%,$primaryClr 100%);
-  background-image: url('../img/1.png');
-  background-size: cover;
-  .hero{
-    height: 100%;
-    .join-w{
-      background-image:linear-gradient(90deg,#00000000 10%,#0000001d 60%,#00000000 90%);
-      padding-right: 3rem;
-      padding-left: 3rem;
-      padding-bottom: 1rem;
-    }
+  .nav-link{
+    color: white;
   }
 }
+/* start intro  */
+
+
+
 .overlay{
   width: 100%;
   height: 100%;
@@ -98,40 +78,13 @@ nav{
     }
   }
 }
-// .swiper .swiper-slide{
-//   width: 10rem;
-//   height: 25rem;
-//   /* background-attachment: fixed; */
-//   background-repeat:no-repeat ;
-//   border-radius: 15px 15px;
-//   background-size:cover ;
-// }
-/* ends intro  */
-
-// .display-5{font-family: 'Tajawal Bold', sans-serif;}
 .display-4{
-  // font-family: 'El Messiri', sans-serif;  
-  // font-family: 'Marhey', cursive;
-  // font-family: 'Tajawal Bold', sans-serif;
   font-size: 1.5rem;
-  // font-family: 'Noto', serif;
 }
-.display-1{
-//  color: $primaryClr; 
-//  color: $grad1;
- font-size: 4rem !important;
-  // font-family: 'Alkalami', serif;
-  // font-family: 'Tajawal Bold', sans-serif;
-  // font-family: 'Marhey', cursive;
-  // font-family: 'Rakkas', cursive;
-  // font-family: 'Vibes', cursive; 
-  
-  // font-family: 'El Messiri', sans-serif;  
-}
+
 .btn{
-  background-color: $primaryClr;
+  background-color: var(--primaryClr);
   border: none;
-  // font-family: 'Marhey';
 }
 .join{
   // margin-left: auto;

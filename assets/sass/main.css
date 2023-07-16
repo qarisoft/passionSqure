@@ -1,6 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkalami&family=El+Messiri:wght@400;500;600;700&family=Marhey:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Rakkas&family=Vibes&display=swap");
 :root {
   --btn-p:#541bb3d1;
+  --primaryClr:#0b5ed7;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.intro {
+  padding-top: 3rem !important;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  left: 0;
+  height: 100vh;
+  background-color: #4527a0;
+  background-image: linear-gradient(270deg, #c5cae9 0%, var(--primaryClr) 100%);
+  background-image: url("../img/1.png");
+  background-size: cover;
+}
+.intro .display-5 {
+  display: flex !important;
+  justify-content: space-between !important;
+  color: #babec1 !important;
+}
+.intro .display-1 {
+  font-size: 4rem !important;
+  font-weight: 600;
+}
+.intro .hero {
+  height: 100%;
+}
+.intro .hero .join-w {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.1137254902) 60%, rgba(0, 0, 0, 0) 90%);
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+.intro .hero .join-w:hover h3 {
+  transition-duration: 0.2s;
+  color: white;
+}
+.intro .hero .join-w:hover h3 span.join {
+  color: white;
+  transition-duration: 0.1s;
+  font-size: 17px !important;
+}
+.intro .hero .join {
+  background-color: rgba(2, 1, 4, 0.1882352941) !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 3px;
+  margin: auto;
+  padding-right: 12px;
+}
+.intro .time-line {
+  padding: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: 13px;
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.1215686275) 0%, black 100%);
+  margin: 0px;
+}
+.intro .time-line p {
+  margin: 0px;
+  color: white;
+  font-weight: 500;
 }
 
 @font-face {
@@ -13,36 +81,17 @@ body {
 }
 
 nav {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0.1490196078) 30%, rgba(0, 0, 0, 0) 80%);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0.1490196078) 30%, rgba(0, 0, 0, 0.0705882353) 80%);
 }
 
 .navbar-nav .nav-item {
   margin: 0px 3rem;
 }
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
 
 /* start intro  */
-.intro {
-  padding-top: 3rem !important;
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  left: 0;
-  height: 100vh;
-  background-color: #4527a0;
-  background-image: linear-gradient(270deg, #c5cae9 0%, #0b5ed7 100%);
-  background-image: url("../img/1.png");
-  background-size: cover;
-}
-.intro .hero {
-  height: 100%;
-}
-.intro .hero .join-w {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.1137254902) 60%, rgba(0, 0, 0, 0) 90%);
-  padding-right: 3rem;
-  padding-left: 3rem;
-  padding-bottom: 1rem;
-}
-
 .overlay {
   width: 100%;
   height: 100%;
@@ -85,17 +134,12 @@ nav {
   color: white;
 }
 
-/* ends intro  */
 .display-4 {
   font-size: 1.5rem;
 }
 
-.display-1 {
-  font-size: 4rem !important;
-}
-
 .btn {
-  background-color: #0b5ed7;
+  background-color: var(--primaryClr);
   border: none;
 }
 
