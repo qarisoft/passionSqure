@@ -8,6 +8,10 @@
   font-weight: 500 !important;
 }
 
+.ray-logo {
+  max-width: 50%;
+}
+
 .intro {
   padding-top: 3rem !important;
   position: absolute;
@@ -26,7 +30,7 @@
   color: #babec1 !important;
 }
 .intro .display-1 {
-  font-size: 4rem !important;
+  font-size: 4rem;
   font-weight: 600;
 }
 .intro .hero {
@@ -163,6 +167,13 @@ nav {
   margin-left: 5px !important;
 }
 
+.vendors .vend {
+  justify-content: space-between;
+}
+.vendors .vend h2 {
+  align-self: center;
+}
+
 @keyframes sh12 {
   0% {
     opacity: 0;
@@ -175,88 +186,20 @@ nav {
     transform: translate(-8px, -3px);
   }
 }
-.ray {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-.ray .title {
-  width: -moz-fit-content;
-  width: fit-content;
-  position: relative;
-  border-bottom: solid 1px rgba(0, 0, 0, 0.1215686275);
-  right: 0px;
-  font-size: 3rem;
-}
-.ray .swiper-w {
-  flex-wrap: wrap;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
-  row-gap: 30px;
-  align-items: center;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-items: stretch;
-  position: absolute;
-  width: 100vw;
-  left: 0px;
-  padding: 14px;
-}
-.ray .swiper-w .swiper-ss {
-  display: flex;
-  overflow: hidden;
-}
-.ray .swiper-w .swiper-ss img {
-  width: 25vw;
-}
-.ray .swiper-w .swiper-s {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow-x: auto;
-  border-bottom: solid 1px rgba(0, 0, 0, 0.0509803922);
-}
-.ray .swiper-w .swiper-s .warper {
-  display: flex;
-  overflow-x: auto;
-  scrollbar-width: thin;
-}
-.ray .swiper-w .swiper-s .warper::-webkit-scrollbar {
-  display: none;
-}
-.ray .swiper-w .swiper-s .warper .swiper-slide {
-  display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.ray .swiper-w .swiper-s h2 {
-  font-weight: bolder;
-  margin-left: auto;
-  margin-right: auto;
-}
-.ray .swiper-w .swiper-s img {
-  width: 25vw;
-  margin: auto auto 0px auto;
-}
-
 .member-wr {
   margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .member-wr .swiper-slide {
+  width: 100px;
   align-self: center;
   display: flex;
-  margin-right: auto !important;
 }
 .member-wr .swiper-slide img {
   width: inherit;
-  border-radius: 50%;
-  max-width: 80% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: #5a23d3 !important;
+  border-radius: 10px;
 }
 
 footer {
@@ -311,27 +254,6 @@ footer .social-media .itm svg {
   .hero-img {
     max-width: 17rem;
   }
-  .ray .swiper-w {
-    width: 95vw;
-    row-gap: 90px;
-    padding: 61px 10rem;
-  }
-  .ray .swiper-w .swiper-s img {
-    width: 17vw;
-    margin: auto auto 0px auto;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .ray .swiper-w .swiper-s h2 {
-    font-weight: 100;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-  }
-  .ray .swiper-w .swiper-s h2.alami {
-    position: relative;
-    bottom: 57px;
-  }
   .hero1 {
     display: flex;
     flex-direction: column;
@@ -344,7 +266,10 @@ footer .social-media .itm svg {
 }
 @media (max-width: 767px) {
   .display-1 {
-    font-size: 3.5rem !important;
+    font-size: 27px !important;
+  }
+  .accordion-body {
+    padding-left: 27px;
   }
   .hero-img {
     max-width: 10rem;
@@ -395,10 +320,10 @@ footer .social-media .itm svg {
   }
   .swiper-w {
     row-gap: 30px !important;
-    justify-content: space-evenly !important;
+    justify-content: space-between;
   }
   .swiper-w .swiper-s img {
-    width: 67vw !important;
+    width: 40vw !important;
   }
   .member-wr .swiper-slide {
     display: flex;
