@@ -11,6 +11,9 @@
 .ray-logo {
   max-width: 50%;
 }
+.ray-logo.mxw5 {
+  max-width: 40%;
+}
 
 .ray-logo2 {
   max-width: 100%;
@@ -25,6 +28,10 @@
 }
 .vend img {
   margin-top: 3px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1490196078);
+  border-style: inset;
+  border-radius: 10px;
 }
 
 .intro {
@@ -335,6 +342,10 @@ footer .social-media .itm svg {
   }
   .vendors .vend {
     justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  .vend {
+    margin-bottom: 60px;
   }
   .swiper-w {
     row-gap: 30px !important;

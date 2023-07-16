@@ -22,6 +22,10 @@ $grad1:linear-gradient(270deg,#c5cae9 0%,$primaryClr 100%);
 .ray-logo{
   max-width: 50%;
   // width:100%;
+  &.mxw5{
+    max-width: 40%;
+
+  }
 }
 .ray-logo2{
   max-width: 100%;
@@ -34,6 +38,10 @@ $grad1:linear-gradient(270deg,#c5cae9 0%,$primaryClr 100%);
 {
   img{
     margin-top: 3px;
+    border-width: 1px;
+    border-color: #00000026;
+    border-style: inset;
+    border-radius: 10px;
   }
   // &::after{
     // content: "";
