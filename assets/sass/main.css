@@ -12,6 +12,21 @@
   max-width: 50%;
 }
 
+.ray-logo2 {
+  max-width: 100%;
+}
+
+.wdth-1 {
+  max-width: 100%;
+}
+
+.vend {
+  /* display: contents; */
+}
+.vend img {
+  margin-top: 3px;
+}
+
 .intro {
   padding-top: 3rem !important;
   position: absolute;
@@ -169,6 +184,7 @@ nav {
 
 .vendors .vend {
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 .vendors .vend h2 {
   align-self: center;
@@ -187,13 +203,14 @@ nav {
   }
 }
 .member-wr {
+  row-gap: 10px;
   margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .member-wr .swiper-slide {
-  width: 100px;
+  width: 170px;
   align-self: center;
   display: flex;
 }
@@ -263,6 +280,13 @@ footer .social-media .itm svg {
   .swiper-button-prev {
     right: 0px !important;
   }
+  .member-wr .swiper-slide {
+    width: 250px;
+  }
+  .member-wr .swiper-slide img {
+    width: inherit;
+    border-radius: 10px;
+  }
 }
 @media (max-width: 767px) {
   .display-1 {
@@ -309,14 +333,8 @@ footer .social-media .itm svg {
   .intro .hero {
     padding-top: 75px;
   }
-  .ray .warper.wa div.swiper-slid {
-    margin-right: 60px;
-    display: flex;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .ray .warper.wa div.swiper-slid img {
-    margin: auto !important;
+  .vendors .vend {
+    justify-content: space-between;
   }
   .swiper-w {
     row-gap: 30px !important;

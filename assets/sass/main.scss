@@ -119,7 +119,7 @@ nav{
 .vendors {
   .vend{
     justify-content: space-between;
-    
+    margin-bottom: 15px;
 
     h2{
       align-self: center;
@@ -146,14 +146,15 @@ nav{
 
 
 .member-wr{
+  row-gap: 10px;
 
   margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 // }
   .swiper-slide{
-    width: 100px;
+    width: 170px;
     align-self: center;
     display: flex;
     
@@ -224,6 +225,7 @@ footer{
   display: none;
 }
 @media (min-width:767px) {
+
   .hero-img{
     max-width:17rem;
   }
@@ -238,6 +240,31 @@ footer{
   .swiper-button-prev{
     right: 0px !important;
   }
+
+  .member-wr{
+    // row-gap: 10px;
+  
+    // margin-bottom: 3rem;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+  // }
+    .swiper-slide{
+      width: 250px;
+      // align-self: center;
+      // display: flex;
+      
+      img{
+        width: inherit;
+        border-radius: 10px;
+      }
+    }
+    
+  }
+
+
+
+
 }
 @media (max-width:767px) {
   .display-1 {
@@ -316,21 +343,11 @@ footer{
 
 
   }
-  .ray{
-    .warper.wa{
+  .vendors{
 
-      
-      div.swiper-slid{
-        margin-right: 60px;
-        display: flex;
-        width: fit-content;
-        img{
-          margin: auto !important;
-        }
-        
-      }
+    .vend{
+      justify-content: space-between;
     }
-    // padding-top: 29rem;
   }
   .swiper-w{
     row-gap: 30px !important;
