@@ -229,6 +229,11 @@ nav {
 footer {
   background-image: linear-gradient(90deg, #4100e4 0%, #422c7a 30%);
 }
+footer .form-comp .container {
+  outline-color: rgba(0, 0, 0, 0.2117647059);
+  outline-style: groove;
+  border-radius: 10px;
+}
 footer hr {
   color: rgb(255, 255, 255);
   outline-width: 2px;

@@ -169,6 +169,17 @@ nav{
 
 
 footer{
+  .form-comp{
+
+    // outline-style: inherit;
+    // outline-width: 1px;
+    // outline-color: black;
+  .container{
+    outline-color: #00000036;
+    outline-style: groove;
+    border-radius: 10px;
+  }
+  }
   hr{
     color: rgb(255, 255, 255);
     outline-width: 2px;
