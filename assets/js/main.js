@@ -45,19 +45,20 @@ $( document ).ready(function() {
         });
         $('.warper.wa').scrollLeft(50);
 
-        window.onresize = main;
-
+        
         
     }    
+    window.onresize = main;
+    window.onresize = main2;
     $(window).on('load',main()) ;
     $(window).on('load',main2()) ;
-    $( window ).on( "resize", function() {
-        main2()
-        console.log('12312313123132123123132');
+    // $( window ).on( "resize", function() {
+        // main2()
+        // console.log('12312313123132123123132');
         // location.reload();
         // main();
         // main2();
-    } );
+    // } );
     // addEventListener("resize", (event) => {
     //     console.log('salah')
     // });
