@@ -366,7 +366,7 @@ footer .social-media .itm svg {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   .smember-wr .sswiper-slide {
-    width: 70%;
+    width: 50%;
     margin: 10px 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -382,6 +382,9 @@ footer .social-media .itm svg {
   }
   .accordion-body {
     padding-left: 27px;
+  }
+  .fs-sml-1 p {
+    font-size: small;
   }
   .hero-img {
     max-width: 10rem;

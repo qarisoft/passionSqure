@@ -269,7 +269,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   
     .sswiper-slide{
-      width: 70%;
+      width: 50%;
       // height: 250px;
       
       margin: 10px 10px;
@@ -293,7 +293,12 @@ footer{
     padding-left: 27px;
   }
 
+  .fs-sml-1{
+    p{
 
+      font-size: small;
+    }
+  }
   .hero-img{
     max-width:10rem;
   }
