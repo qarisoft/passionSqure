@@ -12,7 +12,8 @@
   src: url(../wbf/astra.woff)  format("woff");
   
 }
-
+$transition: .5s;
+$main-color:var(--btn-p);
 $primaryClr:#0b5ed7;
 // $primaryClr:white;
 $grad1:linear-gradient(270deg,#c5cae9 0%,$primaryClr 100%);
@@ -51,7 +52,7 @@ $grad1:linear-gradient(270deg,#c5cae9 0%,$primaryClr 100%);
 }
 @media (max-width:767px) {
   .mt-md-5{
-    margin-top: 0.5rem;
+    margin-top: 2rem;
   }
   
     .ray-logo{

@@ -1,6 +1,9 @@
 $( document ).ready(function() {
     
-    
+    // Preloader Area
+	$(window).on('load', function() {
+		$('.preloader').addClass('preloader-deactivate');
+	});
     
     function main2() {
         let mylist = $('.smember-wr').children();
