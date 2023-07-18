@@ -37,7 +37,7 @@ $( document ).ready(function() {
         let ray_section_h = $('section.ray').height();
         let ray_section_body_h=$('.swiper-w.d-flex').height();
         sp2.css({
-            "padding-top":ray_section_h+ray_section_body_h
+            "padding-top":ray_section_h
         });
         let www123 = $('.swiper-slide.img5').width();
         $('.swiper-slide.img5 img').css({

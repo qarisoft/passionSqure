@@ -4,6 +4,10 @@
   --primaryClr:#0b5ed7;
 }
 
+@font-face {
+  font-family: "astra";
+  src: url(../wbf/astra.woff) format("woff");
+}
 .fw-500 {
   font-weight: 500 !important;
 }
@@ -172,10 +176,6 @@
   font-weight: 500;
 }
 
-@font-face {
-  font-family: "astra";
-  src: url(../wbf/astra.woff) format("woff");
-}
 body {
   direction: rtl;
   font-family: "Tajawal", sans-serif;
@@ -193,14 +193,6 @@ nav {
 }
 
 /* start intro  */
-.overlay {
-  width: 100%;
-  height: 100%;
-  /* background-image: linear-gradient(90deg, #4c3473 0%, #5119ab 100%); */
-  opacity: 0.3;
-  z-index: -100;
-}
-
 .h-txt,
 .display-1,
 .display-4,
