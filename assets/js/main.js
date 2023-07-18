@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     
     // Preloader Area
+    // window.onload()
 	$(window).on('load', function() {
 		$('.preloader').addClass('preloader-deactivate');
 	});
