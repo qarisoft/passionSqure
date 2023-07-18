@@ -20,36 +20,97 @@ $grad1:linear-gradient(270deg,#c5cae9 0%,$primaryClr 100%);
 
 
 .ray-logo{
-  max-width: 50%;
+  max-width: 40%;
   // width:100%;
   &.mxw5{
-    max-width: 40%;
-
+    max-width:20%;}
+  &.prons{
+    max-width: 30%;
   }
 }
 .ray-logo2{
-  max-width: 100%;
+  max-width: 50%;
 }
 .wdth-1{
   max-width: 100%;
 }
-
-.vend
+.max-width-05{
+  max-width: 40%;
+}
+.wdth-02
 {
-  img{
-    margin-top: 3px;
-    border-width: 1px;
-    border-color: #00000026;
-    border-style: inset;
-    border-radius: 10px;
-  }
-  // &::after{
-    // content: "";
-    // position: absolute;
-    // width: 92%;
-    // height: 1px;
-    // margin: auto;
-    /* display: contents; */
-    // background-color: #00000021;
-  // }
+  max-width: 70%;
+}
+@media (max-width:767px) {
+  
+    .ray-logo{
+      max-width: 40%;
+      // width:100%;
+      &.mxw5{
+        max-width:30%;}
+      &.prons{
+        max-width: 40%;}
+      &.max-50{
+        max-width: 50%;}
+      
+    }
+    .ray-logo2{
+      max-width: 100%;
+    }
+    .wdth-1{
+      max-width: 100%;
+    }
+    .max-width-05{
+      max-width: 40%;
+    }
+    .wdth-02
+    {
+      max-width: 70%;
+    }
+}
+
+
+.center{
+  align-self: center;
+}
+.bg-smoth{
+  // background-color: #8b939f41;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  // padding-right: 5px;
+}
+.vis-0{
+  opacity: 0;
+  // visibility: 0;
+}
+.sswiper-slide{
+  // margin: 2px;
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 10%);
+  // background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+
+
+.text-body {
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  color: #f0f0f0;
+  text-shadow: #000 0px 1px 0px;
+  font-family: "Consolas", "Courier New", "Courier";
+  font-size: 1.75em;
+  line-height: 1.40em;
+  font-weight: 500;
+  text-align: left;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }

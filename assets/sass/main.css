@@ -9,29 +9,90 @@
 }
 
 .ray-logo {
-  max-width: 50%;
+  max-width: 40%;
 }
 .ray-logo.mxw5 {
-  max-width: 40%;
+  max-width: 20%;
+}
+.ray-logo.prons {
+  max-width: 30%;
 }
 
 .ray-logo2 {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .wdth-1 {
   max-width: 100%;
 }
 
-.vend {
-  /* display: contents; */
+.max-width-05 {
+  max-width: 40%;
 }
-.vend img {
-  margin-top: 3px;
-  border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.1490196078);
-  border-style: inset;
+
+.wdth-02 {
+  max-width: 70%;
+}
+
+@media (max-width: 767px) {
+  .ray-logo {
+    max-width: 40%;
+  }
+  .ray-logo.mxw5 {
+    max-width: 30%;
+  }
+  .ray-logo.prons {
+    max-width: 40%;
+  }
+  .ray-logo.max-50 {
+    max-width: 50%;
+  }
+  .ray-logo2 {
+    max-width: 100%;
+  }
+  .wdth-1 {
+    max-width: 100%;
+  }
+  .max-width-05 {
+    max-width: 40%;
+  }
+  .wdth-02 {
+    max-width: 70%;
+  }
+}
+.center {
+  align-self: center;
+}
+
+.bg-smoth {
+  background-color: #ffffff;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   border-radius: 10px;
+}
+
+.vis-0 {
+  opacity: 0;
+}
+
+.sswiper-slide {
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.text-body {
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  color: #f0f0f0;
+  text-shadow: #000 0px 1px 0px;
+  font-family: "Consolas", "Courier New", "Courier";
+  font-size: 1.75em;
+  line-height: 1.4em;
+  font-weight: 500;
+  text-align: left;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
 }
 
 .intro {
@@ -193,7 +254,7 @@ nav {
   justify-content: space-between;
   margin-bottom: 15px;
 }
-.vendors .vend h2 {
+.vendors .vend h2, .vendors .vend h4 {
   align-self: center;
 }
 
@@ -209,30 +270,13 @@ nav {
     transform: translate(-8px, -3px);
   }
 }
-.member-wr {
-  row-gap: 10px;
-  margin-bottom: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.member-wr .swiper-slide {
-  width: 170px;
-  align-self: center;
-  display: flex;
-}
-.member-wr .swiper-slide img {
-  width: inherit;
-  border-radius: 10px;
-}
-
 .smember-wr {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .smember-wr .sswiper-slide {
-  width: 80%;
-  margin: 10px 0px;
+  width: 30%;
+  margin: 10px 20px;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -245,8 +289,7 @@ footer {
   background-image: linear-gradient(90deg, #4100e4 0%, #422c7a 30%);
 }
 footer .form-comp .container {
-  outline-color: rgba(0, 0, 0, 0.2117647059);
-  outline-style: groove;
+  background-color: rgba(255, 255, 255, 0.0196078431);
   border-radius: 10px;
 }
 footer hr {
@@ -280,6 +323,12 @@ footer .social-media .itm svg {
   color: rgba(235, 225, 225, 0.8588235294);
 }
 
+.vend {
+  padding: 15px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+}
+
 .whats-call {
   z-index: 10000;
   width: 3rem;
@@ -295,6 +344,9 @@ footer .social-media .itm svg {
 }
 
 @media (min-width: 767px) {
+  .ray-logo {
+    margin-left: 10px;
+  }
   .hero-img {
     max-width: 17rem;
   }
@@ -307,22 +359,15 @@ footer .social-media .itm svg {
   .swiper-button-prev {
     right: 0px !important;
   }
-  .member-wr .swiper-slide {
-    width: 250px;
-  }
-  .member-wr .swiper-slide img {
-    width: inherit;
-    border-radius: 10px;
-  }
 }
 @media (min-width: 1115px) {
   .smember-wr {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   .smember-wr .sswiper-slide {
-    width: 80%;
-    margin: 10px 0px;
+    width: 70%;
+    margin: 10px 10px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -378,10 +423,14 @@ footer .social-media .itm svg {
   }
   .vendors .vend {
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
   .vend {
     margin-bottom: 60px;
+  }
+  .col-6.col-md-2.mt-2 {
+    display: flex;
+    justify-content: center;
   }
   .swiper-w {
     row-gap: 30px !important;
@@ -396,7 +445,9 @@ footer .social-media .itm svg {
   }
   .smember-wr .sswiper-slide {
     width: 80%;
-    margin: 10px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 10px auto;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;

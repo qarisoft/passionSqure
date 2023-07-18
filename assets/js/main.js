@@ -23,7 +23,7 @@ $( document ).ready(function() {
         
         $('.wa').scrollLeft(-100,20);
         let a=$('.intro').height();
-        let a2=$('.title').height();
+        // let a2=$('.title').height();
         let a2Parent=$('.title').parent('.container').width();
         let a3=$('.title').width();
         let a2Rest =( a2Parent - a3)/2;
@@ -31,7 +31,7 @@ $( document ).ready(function() {
             "right":a2Rest
         });
         $('.spacer').css({
-            "padding-top":a+a2
+            "padding-top":a
         });
         let sp2 = $('.spacer-2');
         let ray_section_h = $('section.ray').height();
@@ -52,22 +52,21 @@ $( document ).ready(function() {
     window.onresize = main2;
     $(window).on('load',main()) ;
     $(window).on('load',main2()) ;
-    // $( window ).on( "resize", function() {
-        // main2()
-        // console.log('12312313123132123123132');
-        // location.reload();
-        // main();
-        // main2();
-    // } );
-    // addEventListener("resize", (event) => {
-    //     console.log('salah')
+
+
+    $(function(){
+        $("#typed-strings").typed({
+            strings: ["First sentence.", "Second sentence."],
+            typeSpeed: 0
+        });
+    });
+    
+    // document.addEventListener("DOMContentLoaded", function(){
+    //     Typed.new(".typed", {
+    //         stringsElement: document.getElementById('typed-strings'),
+    //         typeSpeed: 1
+    //     });
     // });
-   
-    // location.reload();
-
-
-
-
 
 
 
