@@ -170,7 +170,7 @@ footer{
   .form-comp{
 
   .container{
-    background-color: #ffffff05;
+    // background-color: #ffffff05;
     
     // outline-style: groove;
     border-radius: 10px;
@@ -289,9 +289,9 @@ footer{
   .display-1 {
     font-size: 27px !important;
   }
-  .accordion-body{
-    padding-left: 27px;
-  }
+  // .accordion-body{
+    // padding-left: 27px;
+  // }
 
   .fs-sml-1{
     p{
@@ -401,10 +401,10 @@ footer{
   .smember-wr{
     display: grid;
     // min-height: 100vh;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
   
     .sswiper-slide{
-      width: 70%;
+      width: 80%;
       margin-right: auto;
       margin-left: auto;
       // height: 250px;
