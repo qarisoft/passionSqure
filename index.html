@@ -273,29 +273,29 @@
                 <div class=" members-sldr w3 mt-5" id="member-sldr">
 
 
-                    <div class="member-wr ">
-                        <div class="swiper-slide"><img src="assets/img/members/1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/2.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/3.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/4.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/5.1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/6.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/7.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/8.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/9.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/10.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/11.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/12.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/13.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/14.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/15.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/16.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/17.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/18.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/19.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/20.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/21.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/members/22.png" alt=""></div>
+                    <div class="smember-wr d-grid ">
+                        <div class="sswiper-slide"><img src="assets/img/members/1.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/2.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/3.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/4.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/5.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/6.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/7.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/8.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/9.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/10.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/11.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/12.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/13.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/14.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/15.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/16.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/17.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/18.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/19.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/20.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/21.png" alt=""></div>
+                        <div class="sswiper-slide"><img src="assets/img/members/22.png" alt=""></div>
                     </div>
                     <!-- <div class="swiper-pagination"></div> -->
                     <!-- <div class="swiper-button-next"></div> -->
@@ -431,8 +431,8 @@
             </div>
         </div>
     </footer>
-
-
+    
+    
     <a href="https://wa.link/qvo2vr" class="whats-call">
         <img src="assets/img/whatsapp.png" alt="">
         <!-- <i class="fa-brands fa-square-whatsapp"></i> -->
@@ -441,7 +441,7 @@
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script> -->
     <!-- <script src="assets/js/slick.min.js"></script> -->
-
+    
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/all.min.js"></script>
@@ -453,8 +453,32 @@
     <!-- <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
     <!-- <script src="assets/js/jquery.mCustomScrollbar.js"></script> -->
     <!-- <script src="assets/js/s/mousewheel.js"></script> -->
+    <script>
 
+        
+        
+    $( document ).ready(function() {
+    function main2() {
+        let mylist = $('.smember-wr').children();
+        
+        
+        for (const key in mylist) {
+            if (Object.hasOwnProperty.call(mylist, key)) {
+                const el = mylist[key];
+                el.style.backgroundImage = `url(`+el.firstElementChild.getAttribute('src')+`)`;
+                const elw=el.offsetWidth *0.8389261745
+                el.style.height =elw+`px`; 
+                
+            }
+        }
+        
+    }
 
+        window.onresize = main2;
+    });
+    </script>
+    
+    
 </body>
 
 </html>
