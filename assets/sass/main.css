@@ -12,6 +12,10 @@
   font-weight: 500 !important;
 }
 
+.border-radius-5 {
+  border-radius: 5px;
+}
+
 .ray-logo {
   max-width: 40%;
 }
@@ -20,6 +24,12 @@
 }
 .ray-logo.prons {
   max-width: 30%;
+}
+.ray-logo.max-sm-25 {
+  max-width: 22%;
+}
+.ray-logo.max-sm-24 {
+  max-width: 24%;
 }
 
 .ray-logo2 {
@@ -181,6 +191,51 @@ body {
   font-family: "Tajawal", sans-serif;
 }
 
+.plyr__control--overlaid::before,
+.plyr__control--overlaid::after,
+.btn-circle.ripple::before,
+.btn-circle.ripple::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.8;
+  animation: ripple-1 2s infinite ease-in-out;
+  z-index: -1;
+}
+
+.plyr__control--overlaid::after,
+.btn-circle.ripple::after {
+  opacity: 0.6;
+  animation: ripple-2 2s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes ripple-1 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes ripple-2 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
 /*================================================
 Preloader Area CSS
 =================================================*/
@@ -401,7 +456,7 @@ nav {
   justify-content: space-between;
   margin-bottom: 15px;
 }
-.vendors .vend h2, .vendors .vend h4 {
+.vendors .vend h2, .vendors .vend h4, .vendors .vend h5 {
   align-self: center;
 }
 
@@ -509,7 +564,8 @@ footer .social-media .itm svg {
 @media (min-width: 1115px) {
   .smember-wr {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .smember-wr .sswiper-slide {
     width: 50%;
@@ -522,9 +578,19 @@ footer .social-media .itm svg {
     display: none;
   }
 }
+@media (max-width: 350px) {
+  #about {
+    padding-top: 0px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .intro .display-1 {
+    font-size: 3rem !important;
+  }
+}
 @media (max-width: 767px) {
   .display-1 {
-    font-size: 27px !important;
+    font-size: 25px !important;
   }
   .fs-sml-1 p {
     font-size: small;
@@ -533,10 +599,11 @@ footer .social-media .itm svg {
     max-width: 10rem;
   }
   .intro {
-    height: 72vh;
+    height: 80vh;
     padding-top: 0px !important;
     background-size: cover;
     background-attachment: fixed;
+    background-position: right;
   }
   .intro .hero1 {
     height: 34vh;

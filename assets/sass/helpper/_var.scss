@@ -23,7 +23,9 @@ $grad1:linear-gradient(270deg,#c5cae9 0%,$primaryClr 100%);
 .fw-500{
   font-weight: 500 !important;
 }
-
+.border-radius-5{
+  border-radius: 5px;
+}
 
 .ray-logo{
   max-width: 40%;
@@ -32,7 +34,13 @@ $grad1:linear-gradient(270deg,#c5cae9 0%,$primaryClr 100%);
     max-width:20%;}
   &.prons{
     max-width: 30%;
+
   }
+  &.max-sm-25{
+    max-width: 22%;  }
+  
+  &.max-sm-24{
+    max-width: 24%;  }
 }
 .ray-logo2{
   max-width: 50%;

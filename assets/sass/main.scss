@@ -13,7 +13,50 @@ body{
   // font-family: 'astra';
 }
 
+.plyr__control--overlaid::before,
+.plyr__control--overlaid::after,
+.btn-circle.ripple::before,
+.btn-circle.ripple::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.8;
+  animation: ripple-1 2s infinite ease-in-out;
+  z-index: -1;
+}
+.plyr__control--overlaid::after,
+.btn-circle.ripple::after {
+  opacity: 0.6;
+  animation: ripple-2 2s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
 
+@keyframes ripple-1 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes ripple-2 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
 /*================================================
 Preloader Area CSS
 =================================================*/
@@ -271,7 +314,7 @@ nav{
     // justify-content: space-evenly;
     margin-bottom: 15px;
 
-    h2,h4{
+    h2,h4,h5{
       align-self: center;
     }
   }
@@ -414,8 +457,9 @@ footer{
 
   .smember-wr{
     display: grid;
+    row-gap: 16px;
     // min-height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
   
     .sswiper-slide{
       width: 50%;
@@ -434,9 +478,21 @@ footer{
 }
 
 
+@media (max-width:350px){
+  #about{
+    padding-top: 0px !important;
+  }
+}
+// @media
+
+@media only screen and (min-width:768px) and (max-width:1000px) {
+  .intro .display-1{
+    font-size: 3rem !important;
+  }
+}
 @media (max-width:767px) {
   .display-1 {
-    font-size: 27px !important;
+    font-size: 25px !important;
   }
   // .accordion-body{
     // padding-left: 27px;
@@ -466,13 +522,14 @@ footer{
     }
   }
   .intro {    
-    height: 72vh;
+    height: 80vh;
     padding-top: 0px !important;
     // background-color: #4527a0;
     // background-image: linear-gradient(270deg, #c5cae9 0%, #4527a0 100%);
     // background-image: url(../img/fogy.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: right;
     .hero1{
       height: 34vh;
       display: flex;
